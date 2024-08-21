@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Last Hamburger is the best restaurant because we have the best meat and work team.">
+    <meta name="keywords" content="the last hamburger, last hamburger, quality hamburger, best hamburger restaurant">
+
+    <!--Stylesheet-->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <title>The Last Hamburger</title>
+</head>
+<body>
+
+    <!--Header-->
+
+    <header class="top-nav">
+        <div id="logo">
+            <a class="header-logo" href="index.html">The Last Hamburger.</a>
+        </div>
+        
+        <input id="menu-toggle" type="checkbox">
+        <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="free-burger.html">Free Burger</a>
+                </li>
+            </ul>
+    </header>
+
+    <hr>
+
+    <!--Free Burger Form-->
+
+    <section>
+        <div id="free-burger">
+
+            <form action="https://formdump.codeinstitute.net/" method="post" class="signup-form" enctype="text/plain">
+                <fieldset>
+                    <legend>Your details</legend>
+            
+                    <div class="details">
+                        <label for="name" class="details-customer">Name</label>
+                        <input class="input-details" id="name" type="text" name="full_name" placeholder="Your name" required>
+                    </div>
+                    <div class="details">
+                        <label for="email" class="details-customer">Email</label>
+                        <input class="input-details" id="email" type="email" name="email" placeholder="Your email" required>
+                    </div>
+                    
+                    <div class="details">
+                        <label for="age" class="details-customer">Age</label>
+                        <input class="input-details" type="number" id="age" name="age"  min="0" max="100" value="0" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Our menu</legend>
+                    <div class="details">
+                        <label for="fav-burger" class="details-customer">What is your favourite Burger?</label>
+                        <input class="input-details" id="fav-burger" list="burgers" name="fav-burger" required>
+                        <datalist id="burgers">
+                            <option value="Basic">
+                            <option value="Double Basic">
+                            <option value="Texas">
+                            <option value="The Last Hamburger">
+                        </datalist>
+                    </div>
+
+                    <div class="details">
+                        <label for="often-visit" class="details-customer">How often do you visit The Last Hamburger?</label>
+                        <input class="input-details" id="often-visit" list="days-per-week" name="often-visit" required>
+                        <datalist id="days-per-week">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="+3">
+                        </datalist>
+                    </div>
+        
+                    <legend>Which of our Appetizers do you prefer?</legend>
+                    <div class="details">
+                        <input type="checkbox" id="nachos-checkbox" name="nachos">
+                        <label for="nachos-checkbox">Nachos</label>
+                    </div>
+
+                    <div class="details">
+                        <input type="checkbox" id="fries-checkbox" name="fries">
+                        <label for="fries-checkbox">Fries</label>
+                    </div>
+
+                    <div class="details">
+                        <input type="checkbox" id="sweet-fries-checkbox" name="sweet-fries">
+                        <label for="sweet-fries-checkbox">Sweet Fries</label>
+                    </div>
+
+                    <div class="details">
+                        <input type="checkbox" id="ribs-checkbox" name="ribs">
+                        <label for="ribs-checkbox">Ribs</label>
+                    </div>	
+                </fieldset>
+
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <label for="feedback" class="details-customer, details">How can we improve?</label>
+                    <br>
+                    <textarea class="input-details" id="feedback" rows="10" cols="90" name="feedback" required></textarea>
+                </fieldset>
+
+                <input type="submit" class="block-label" value="Send">
+            </form>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!--Footer-->
+    <footer >
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+
+        <p class="copyright">Copyright © Bohdan B.P. 2022 : </p>
+        <ul class="social-media">
+            <li><a href="https://github.com/BohdanBezushka" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bohdan-bezushka-perepelytsia/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        
+    </footer>
+
+    <!-- Font script -->
+    <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
+</body>
+</html>
